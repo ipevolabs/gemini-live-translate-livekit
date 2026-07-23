@@ -4,6 +4,15 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 @AGENTS.md
 
+## Branching / development flow
+
+This is the `ipevolabs` fork. Branches have distinct roles:
+
+- **`main`** — mirrors upstream. Only ever fast-forwarded with upstream changes; never commit our own work here.
+- **`dev`** — the default branch and our working branch. All our own work lands here (directly or via feature branches off `dev`).
+
+To pull in upstream changes: update `main`, then merge `main` → `dev`. Open new feature/fix branches off `dev` and merge them back into `dev`.
+
 ## Commands
 
 ```bash
